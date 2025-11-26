@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Welcome to EKS!</title>
+        <style>
+            body {
+                width: 35em;
+                margin: 0 auto;
+                font-family: Tahoma, Verdana, Arial, sans-serif;
+                background-color: #f0f0f0;
+            }
+            .container {
+                background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                margin-top: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            h1 {
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to Nginx on EKS!</h1>
+            <p>If you see this page, your Nginx web server is successfully running on Amazon EKS.</p>
+            <p>This is a custom webpage served from a Kubernetes ConfigMap.</p>
+            <hr/>
+            <p><em>Thank you for using Nginx on Amazon EKS!</em></p>
+        </div>
+    </body>
+    </html>
