@@ -133,4 +133,3 @@ terraform destroy
 
 ---
 
-✅ That’s a clean, properly sequenced, and categorized workflow for setting up and managing an EKS cluster via Terraform and kubectl both on Linux and Mac.
